@@ -1,13 +1,15 @@
-function login(username: string): string {
-  console.log(username);
+function login(
+  username: string
+): string {
+  // console.log(username);
   
-  const user = {
-    name:"test"
+  const user = {name:"test"
   }
 
+  // console.log(user.name);
+  
   user.name
-
-  return username;
+  return username + user.name;
 }
 
 login("hi");
