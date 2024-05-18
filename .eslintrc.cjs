@@ -1,12 +1,7 @@
-const { error } = require("console");
-
 /* eslint-env node */
 module.exports = {
   extends: [
     "eslint:recommended",
-    // 'plugin:@typescript-eslint/recommended',
-    "plugin:@typescript-eslint/strict",
-    "plugin:@typescript-eslint/stylistic",
     "plugin:@typescript-eslint/recommended-type-checked",
     "prettier",
   ],
@@ -21,4 +16,12 @@ module.exports = {
     "no-console": "error",
     "dot-notation": "error",
   },
+  overrides: [
+    {
+      files: ['.eslintrc.cjs'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };
