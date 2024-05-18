@@ -18,9 +18,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['.eslintrc.cjs'],
+      files: [".eslintrc.cjs"],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off',
+        "@typescript-eslint/no-var-requires": "off",
       },
     },
   ],

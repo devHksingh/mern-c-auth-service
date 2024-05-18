@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "a user management service",
   "main": "index.js",
-  
   "scripts": {
     "dev": "nodemon ./src/server.ts",
     "format:check": "prettier . --check",
