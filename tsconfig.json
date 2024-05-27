@@ -117,8 +117,7 @@
     "jest.config.js",
     "app.spec.ts",
     "register.spec.ts",
-    "tests/**/*.ts",
-    
+    "tests/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
