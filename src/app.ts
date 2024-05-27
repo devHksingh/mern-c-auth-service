@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 import logger from "./config/logger";
 import { HttpError } from "http-errors";
+import authRouter from "./routes/auth";
 // import createError from "http-errors";
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -10,7 +11,8 @@ app.get("/", async (req, res) => {
   res.status(200).send("wlcm to auth service");
 });
 
-//
+app.use("/auth", authRouter);
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
   logger.error(err.message);

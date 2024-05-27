@@ -115,7 +115,10 @@
     "server.ts",
     ".eslintrc.cjs",
     "jest.config.js",
-    "app.spec.ts"
+    "app.spec.ts",
+    "register.spec.ts",
+    "tests/**/*.ts",
+    
   ],
   "exclude": ["node_modules"]
 }

@@ -3,6 +3,7 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
+  verbose:true
 };
 
 // export const preset = 'ts-jest'
